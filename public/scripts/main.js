@@ -9,8 +9,11 @@ const displayForecast = document.querySelector('#forecast')
 
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()
+    displayLocation.textContent = "Loading..."
+    displayForecast.innerHTML = ""
+    displayIcon.innerHTML =  ""
 
-    fetch(`/weather?address=${encodeURIComponent(searchedTerm.value.replace(/;/g, ""))}`).then((respone)=>{
+    fetch(`/weather?address=${encodeURIComponent(searchedTerm.value.replace(/[;/]/g, ""))}`).then((respone)=>{
         respone.json().then((data)=>{
             if(data.error){
                return displayLocation.textContent = data.error, displayIcon.innerHTML = "", displayForecast.innerHTML =""

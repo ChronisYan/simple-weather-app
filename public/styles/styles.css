@@ -37,7 +37,7 @@ img{
 }
 
 nav > h1{
-    font-size: 55px;
+    font-size: 4vmax;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #f2f2f2;
 } 
@@ -45,7 +45,7 @@ nav > h1{
 nav a{
     color:#d8d8d8;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 1.6vmax;
     padding: 0 10px 0 10px;
 }
 
@@ -75,7 +75,7 @@ input{
     opacity: 0.9;
     color:#cecece;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 1.7vmax;
     padding:20px;
     margin: 15px;
     background: #232323;
@@ -93,7 +93,7 @@ button{
     color:#cecece;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding:10px;
-    font-size: 25px;
+    font-size: 1.7vmax;
     border: 3px solid #cceece;
     border-radius: 100px;
     width: 20vh;
@@ -129,7 +129,7 @@ button:focus{
     opacity: 0.9;
     color:#cecece;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 1.8vmax;
     padding:5px;
     text-align: center;
 }
@@ -145,12 +145,15 @@ button:focus{
     opacity: 0.9;
     color:#cecece;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
+    font-size: 1.7vmax;
     padding:5px;
-    text-align: center;
+    text-align: justify;
 }
 
-@media only screen and (max-width: 860px){
+@media only screen and (max-width: 400px){
+    input{
+        width: 30vh;
+    }
     .weather{
         flex-direction: column;
         justify-content: space-between;
@@ -159,11 +162,5 @@ button:focus{
     .forecastStyles, .locationStyles, .iconStyle{
         width: 100%;
         flex: 0 0 150px;
-    }
-}
-
-@media only screen and (max-width: 400px){
-    input{
-        width: 30vh;
     }
 }
