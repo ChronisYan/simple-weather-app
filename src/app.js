@@ -24,14 +24,14 @@ app.get('/', (req, res)=>{
     res.render('index',{
         title: 'Simple Weather App',
         introText: "Welcome to this little nodeJs app!",
-        author: 'Steve the man'
+        author: 'chronisyan'
     })
 })
 
 app.get('/about', (req, res)=>{
     res.render('about',{
         title: 'About Page',
-        author: 'Steve the man'
+        author: 'chronisyan'
     })
 })
 
@@ -39,7 +39,7 @@ app.get('/help', (req,res)=>{
     res.render('help', {
         title: 'Help Page',
         helpMessage: 'Yo need help',
-        author: 'Steve the man'
+        author: 'chronisyan'
     })
 })
 
@@ -69,7 +69,7 @@ app.get('/help/*', (req,res)=>{
     res.render('404',{
         title: '404',
         mainContent: 'Help article not found',
-        author: 'Steve the man'
+        author: 'chronisyan'
     })
 })
 
@@ -77,7 +77,7 @@ app.get('*', (req,res)=>{
     res.render('404',{
         title: '404',
         mainContent: 'Page not found',
-        author: 'Steve the man'
+        author: 'chronisyan'
     })
 })
 
