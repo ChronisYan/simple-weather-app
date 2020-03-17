@@ -11,7 +11,10 @@
   "dependencies": {
     "express": "^4.17.1",
     "hbs": "^4.1.0",
+<<<<<<< HEAD
     "minimist": "^1.2.5",
+=======
+>>>>>>> 7eb776006a56bccfe5aba7673670f587d0166ec8
     "request": "^2.88.2"
   }
 }
