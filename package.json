@@ -9,12 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.0.2",
     "express": "^4.17.1",
-    "hbs": "^4.1.0",
-<<<<<<< HEAD
+    "helmet": "^3.22.0",
     "minimist": "^1.2.5",
-=======
->>>>>>> 7eb776006a56bccfe5aba7673670f587d0166ec8
     "request": "^2.88.2"
   }
 }

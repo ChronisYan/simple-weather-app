@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather App</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/img/icon.png" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <script src="scripts/main.js" defer></script>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <%- include('partials/header.ejs'); %>
+    <main>
+      <form action="">
+        <input type="text" placeholder="Location..." />
+        <button type="submit">Search</button>
+      </form>
+      <section id="weatherUser" class="weather">
+        <p id="location" class="locationStyles"></p>
+        <div id="icon" class="iconStyles"></div>
+        <p id="forecast" class="forecastStyles"></p>
+      </section>
+    </main>
+    <%- include('partials/footer.ejs'); %>
+  </body>
+</html>
