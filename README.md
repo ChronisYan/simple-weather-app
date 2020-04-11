@@ -1,2 +1,3 @@
-# nodeCourse-WeatherApp
-Andrew Mead's Node course on Udemy: https://www.udemy.com/course/the-complete-nodejs-developer-course-2/
+# Simple Weather Application 
+
+It uses data from **mapbox.com** and **darksky.net**!
